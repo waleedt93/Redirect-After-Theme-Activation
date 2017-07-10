@@ -1,0 +1,3 @@
+//add this to your theme's functions.php
+if (is_admin() && isset($_GET['activated']) && $pagenow == "themes.php")
+  wp_redirect('themes.php?page=themeoptions');
